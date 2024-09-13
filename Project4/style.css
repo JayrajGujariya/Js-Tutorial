@@ -1,0 +1,57 @@
+body{
+    background-color: #dbe7f0;
+}
+.container{
+    height: 600px;
+    width: 1200px;
+    background-color: rgb(234, 227, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:60px;
+    margin-left:130px;
+    flex-direction: column;
+    border-radius:22px;
+    color:green;
+}
+#guessedNumber{
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 10px;
+    margin-left:60px;
+}
+.descText{
+    font-size:25px;
+}
+#submitGuess{
+    display: flex;
+    display: block;
+    margin-top: 20px;
+    margin-left: 90px;
+    font-size: 15px;
+    padding: 10px;
+    color: blue;
+    border: 2px solid green;
+    border-radius: 12px;
+}
+.displayMassage{
+    margin-top:10px;
+    font-size: 15px;
+    padding: 10px;
+    margin-left:60px;
+    color: red;
+}
+.resetBtn{
+    display: flex;
+    width: 250px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 15px;
+    padding: 10px;
+    color: blue;
+    background-color: yellow;
+    border: 2px solid green;
+    border-radius: 12px;
+
+}

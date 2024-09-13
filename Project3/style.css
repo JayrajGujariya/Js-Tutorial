@@ -1,0 +1,19 @@
+body{
+    background-color: #dbe7f0;
+}
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 600px;
+    flex-direction: column;
+    border-radius:10%;
+    color:green;
+}
+.clock{
+    margin-top: 10px;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clsosure in JS</title>
+</head>
+
+<body>
+    <button id="orange">Orange</button>
+    <button id="red">Red</button>
+</body>
+
+
+<script>
+function colorChanger(color) {
+  return function handleClick() {
+    document.body.style.backgroundColor = `${color}`;
+  };
+}
+
+// Attach event listeners with closures
+document.getElementById('orange').addEventListener('click',colorChanger('orange'));
+document.getElementById('red').addEventListener('click',colorChanger('red'));
+</script>
+
+</html>

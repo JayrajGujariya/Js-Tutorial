@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XMLHttpREquest</title>
+    <style>
+        .userCard {
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+        #profile {
+            width: 100px;
+            height: 100px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+    Value	State	Description
+       0	UNSENT	Client has been created. open() not called yet.
+       1	OPENED	open() has been called.
+       2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+       3	LOADING	Downloading; responseText holds partial data.
+       4	DONE	The operation is complete.
+
+       <div class="userCard">
+        <div id="profile"></div>
+        <div id="username"></div>
+        <div id="followers"></div>
+       </div>
+    
+</body>
+<script>
+    const url='https://api.github.com/users/hiteshchoudhary'
+    const data=new XMLHttpRequest();
+    data.open('GET',url);
+    data.onreadystatechange=function(){
+        console.log(data.readyState)
+        if(data.readyState===4){
+            const info=JSON.parse(this.responseText)
+           // console.log(typeof info)
+            console.log(info)
+            let profile=document.getElementById('profile');
+            let username=document.getElementById('username');
+            let followers=document.getElementById('followers');
+            profile.style.backgroundImage=`url(${info.avatar_url})`
+            username.textContent = responseData.login;
+            followers.textContent = `Followers: ${responseData.followers}`;
+        }
+       
+    }
+    data.send()
+</script>
+</html>

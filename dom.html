@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+    <div class="list">
+        <ul>
+            <li>list1</li>
+            <li>list2</li>
+            <li>list3</li>
+            <li>list4</li>
+        </ul>
+    </div>
+    <h1>Programming Language</h1>
+    <ul class="langName">
+        <li>Python</li>
+    </ul>
+    <script>
+        //const parent=document.querySelector('.parent');
+        // console.log(parent.children[0]);
+        // console.log(parent.firstElementChild);
+        // console.log(parent.lastElementChild);
+        // console.log(parent.childNodes);
+        //const dayOne=document.querySelector('.day');
+        //console.log(dayOne)
+        // console.log(dayOne.parentElement)
+        // console.log(dayOne.nextElementSibling);
+
+        // let div=document.createElement('div');
+        // console.log(div);
+        // div.innerText="Chai aur Code";
+        // div.style.color="red";
+        // div.style.backgroundColor="#112233";
+        // let textNode=document.createTextNode("Chai or Java Script")
+        // div.appendChild(textNode)
+        // document.body.appendChild(div);
+
+
+        
+
+        // function addLanguage(lang){
+        //     let li=document.createElement('li');
+        //     li.innerHTML=lang;
+        //     document.querySeflector('.langName').appendChild(li);
+        // }
+        // addLanguage('java');
+        // addLanguage('Cpp');
+
+        // function addLanguage(lang){
+        //     let li=document.createElement('li');
+        //     li.appendChild(document.createTextNode(lang))
+        //     document.querySelector('.langName').appendChild(li);
+        //  }
+        // addLanguage('java');
+        // addLanguage('Rubby');
+        // addLanguage('Cpp');
+
+        //Edit
+    //     let secondList=document.querySelector('li:nth-child(2)');
+    //     console.log(secondList);
+    //     let li=document.createElement('li');
+    //    // li.innerHTML='Chai aur Code';
+    //      li.textContent='Chai aur Code';
+    //     console.log(li)f
+    //     secondList.replaceWith(li);
+
+        //edit
+        let firstList=document.querySelector('li:first-child')
+        //console.log(firstList);
+        firstList.outerHTML='<li>jayraj</li>'
+        
+
+        //remove
+        let lastList=document.querySelector('li:last-child')
+        console.log(lastList)
+        lastList.remove();
+
+    </script>
+</body>
+</html>

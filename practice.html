@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <ul class="langName">
+        <li>Java</li>
+        <li>Python</li>
+        <li>Rubby</li>
+    </ul>
+    <script>
+        //append
+
+        // let langName=document.querySelector('.langName');
+        // //console.log(langName)
+        // let li=document.createElement('li');
+        // //console.log(li);
+        // li.appendChild(document.createTextNode('Cpp'));
+        // langName.appendChild(li);
+       
+        //edit
+        // let secondLang=document.querySelector('li:nth-child(2)')
+        // console.log(secondLang)
+        // //secondLang.outerHTML='<li>Sanskrit</li>'
+        // let li=document.createElement('li');
+        // li.textContent='Sanskrit';
+        // secondLang.replaceWith(li)
+
+
+        //remove
+        let lastLang=document.querySelector('li:last-child')
+        console.log(lastLang)
+        lastLang.remove()
+
+    </script>
+</body>
+</html>
